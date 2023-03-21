@@ -3,7 +3,7 @@
 /**
  * init_dog - This is the function initialising the struct dog
  * struct dog - This is the struct
- * @d: structure object
+ * @d: structure object.
  * @name: parameter
  * @age: parameter
  * @owner: parameter
