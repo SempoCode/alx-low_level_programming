@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- * struct dog - This is the structure
+ * struct dog - This is the structure.
  * @d: this is the name of structuture
  * Retturn: nothing
  */
