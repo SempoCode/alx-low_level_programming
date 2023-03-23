@@ -2,7 +2,7 @@
 
 0. What's my name
 Write a function that prints a name.
-Prototype: void print_name(char *name, void (*f)(char *));
+Prototype: void print-name(char *name, void (*f)(char *));
 
 1. If you spend too much time thinking about a thing, you'll never get it done
 Write a function that executes a function given as a parameter on each element of an array.
@@ -39,7 +39,7 @@ if the user tries to divide (/ or %) by 0, print Error, followed by a new line, 
 
 Write a program that prints the opcodes of its own main function.
 
-Usage: ./main number_of_bytes
+Usage: ./main number-of-bytes
 Output format:
 the opcodes should be printed in hexadecimal, lowercase
 each opcode is two char long
