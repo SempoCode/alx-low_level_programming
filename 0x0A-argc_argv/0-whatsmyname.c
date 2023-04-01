@@ -6,8 +6,8 @@
  * @argc: number of the arguments
  * Return: 0 when successful
  */
-int main(int __attribute__((unused)) argc, char* argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
 	printf("%s.\n", *argv);
-	retutn (0);
+	return (0);
 }
