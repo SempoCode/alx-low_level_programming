@@ -18,5 +18,5 @@ size_t print_listint(const listint_t *h)
 		j++;
 	}
 
-	return (0);
+	return (j);
 }
