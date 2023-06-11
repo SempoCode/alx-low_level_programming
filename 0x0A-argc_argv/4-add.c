@@ -13,7 +13,7 @@ int check_arg(char *s)
 
 	for (i = 0; i < strlen(s); i++)
 	{
-		if (!isdigit(s[i])) 
+		if (!isdigit(s[i]))
 		{
 			return (0);
 		}
