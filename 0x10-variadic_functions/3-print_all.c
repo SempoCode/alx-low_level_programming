@@ -11,7 +11,6 @@ void print_all(const char * const format, ...)
 	unsigned int j;
 	char *s;
 	char *separator = "";
-	float f;
 	va_list list;
 
 	va_start(list, format);
@@ -29,8 +28,7 @@ void print_all(const char * const format, ...)
 					printf("%s%d", separator, va_arg(list, int));
 					break;
 				case 'f':
-					f = va_arg(list, double);
-					printf("%s%f", separator, f);
+					printf("%s%f", separator, va_arg(list, double));
 					break;
 				case 's':
 					s = va_arg(list, char *);
@@ -39,7 +37,8 @@ void print_all(const char * const format, ...)
 					printf("%s%s", separator, s);
 					break;
 				default:
-					break;
+					j++;
+					continue;
 			}
 			separator = ", ";
 			j++;
