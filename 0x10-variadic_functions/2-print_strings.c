@@ -5,6 +5,7 @@
  * print_strings - prints the strings in the variadic function
  * @separator: pointer to the character separating the strings
  * @n: the number of strings in the function
+ * @...: the other strings entered
  * Return: nothing
  */
 void print_strings(const char *separator, const unsigned int n, ...)
