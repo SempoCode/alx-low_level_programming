@@ -1,0 +1,27 @@
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+SRC_PATTERN = %.c
+
+$(SRC_PATTERN):
+	$(CC) -c $(CFLAGS) $< -o $@
+
+SRC = main.c school.c
+
+$(NAME): $(SRC) m.h  
+
+$(NAME):
+	$(CC) -o $(NAME) $(SRC)
+
+NAME = school
+
+clean:
+	rm -f *~ $(NAME)
+
+oclean:
+	rm -f $(SRC_PATTERN:%.c=%.o)
+
+fclean: clean oclean
+
+re: fclean $(NAME)
+
