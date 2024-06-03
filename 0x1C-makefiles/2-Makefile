@@ -1,0 +1,15 @@
+CC = gcc
+SRC = main.c school.c
+NAME = school
+OBJ_PATTERN = %.o
+SRC_PATTERN = %.c
+
+$(OBJ_PATTERN): $(SRC_PATTERN)
+	$(CC) -c $< -o $@
+
+OBJ = $(patsubst $(SRC_PATTERN), $(OBJ_PATTERN), $(SRC))
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) -o $(NAME) $(OBJ)
